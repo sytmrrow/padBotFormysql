@@ -1,6 +1,7 @@
 package com.ai.face.network;
 
 import com.ai.face.bean.MeetingData;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -13,4 +14,7 @@ public interface ApiService {
 
     @GET("conference_room/ordinary/getAllReservationByRobot")
     Call<ResponseBody> getReservations();
+
+    @POST("")
+    Call<ResponseBody> login();
 }
