@@ -17,6 +17,7 @@ import com.ai.face.search.SearchNaviActivity
 import com.ai.face.addFaceImage.AddFaceImageActivity
 import com.ai.face.search.ConfReserve
 import com.ai.face.search.FaceSearch1NActivity
+import com.ai.face.search.LoginActivity
 import com.ai.face.utils.VoicePlayer
 import com.ai.face.verify.LivenessDetectionActivity
 import com.ai.face.verify.Verify_11_javaActivity
@@ -88,7 +89,7 @@ class NaviActivity : AppCompatActivity(), PermissionCallbacks {
 //        }
 
         viewBinding.confReserve.setOnClickListener {
-            startActivity(Intent(this@NaviActivity, ConfReserve::class.java))
+            startActivity(Intent(this@NaviActivity, LoginActivity::class.java))
         }
 
         viewBinding.faceSearch1N.setOnClickListener {
